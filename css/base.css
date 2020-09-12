@@ -4,7 +4,7 @@
     --font-color: #fff;
     --heading-color: grey;
 }
-@font-face{font-family:CeraPro-Regular;src:url(font/CeraPro-Regular.otf);font-display:swap}
+@font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
 body{
     font-family: 'CeraPro-Regular';
 }
