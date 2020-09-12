@@ -10,9 +10,9 @@ body{
 .view1{
     background-color: #116ebf;  background-repeat: no-repeat; background-size:cover; background-position: center;
 }
-.holder-first{width:85%;position: absolute;height:80vh;top:10%;box-shadow:0 4px 38px 1px;}
-.holder-inner{width:85%; position:absolute;height:80vh; top:10%;left:15%;box-shadow: 0 4px 38px 1px;
-    background:linear-gradient(rgba(7, 33, 68, 0.9), rgba(8, 39, 75, 0.9)),url('https://images.unsplash.com/photo-1562601622-d344391156fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
+.holder-first{width:85%;position: absolute;height:80vh;top:10%;box-shadow:0 2px 8px 0px;}
+.holder-inner{width:85%; position:absolute;height:80vh; top:10%;left:15%;box-shadow: 0 4px 18px 0px;
+    background:linear-gradient(rgba(7, 33, 68, 0.9), rgba(8, 39, 75, 0.9)),url('https://images.unsplash.com/photo-1516216628859-9bccecab13ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
 .hr-light{background-color:white;}
 .btn-learn{padding:5px;border:1px solid white;}
 .login-container{background-color:white;}
