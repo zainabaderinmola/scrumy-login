@@ -10,8 +10,22 @@ body{
 .view1{
     background-color: #116ebf;  background-repeat: no-repeat; background-size:cover; background-position: center;
 }
-.holder-first{width:85%;position: absolute;height:80vh;top:10%;box-shadow:0 2px 8px 0px;}
-.holder-inner{width:85%; position:absolute;height:80vh; top:10%;left:15%;box-shadow: 0 4px 18px 0px;
+.holder-second{width:85%;position: absolute;height:80vh;top:10%;box-shadow:
+    2.3px 4.9px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    2.3px 4.9px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    2.3px 4.9px 12.5px 10px rgba(0, 0, 0, 0.06),
+    2.3px 4.9px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    2.3px 4.9px 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    2.3px 4.9px 100px 80px rgba(0, 0, 0, 0.12)
+  ;}
+.holder-first{width:85%; position:absolute;height:80vh; top:10%;left:15%;box-shadow:
+    2.3px 4.9px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    2.3px 4.9px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    2.3px 4.9px 12.5px 10px rgba(0, 0, 0, 0.06),
+    2.3px 4.9px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    2.3px 4.9px 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    2.3px 4.9px 100px 80px rgba(0, 0, 0, 0.12)
+  ;
     background:linear-gradient(rgba(7, 33, 68, 0.9), rgba(8, 39, 75, 0.9)),url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
 .hr-light{background-color:white;}
 .btn-learn{padding:5px;border:1px solid white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.3);}
