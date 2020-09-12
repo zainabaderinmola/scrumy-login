@@ -33,7 +33,7 @@ body{
 .btn-learn{padding:5px;border:1px solid white;color:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.3);}
 .btn-learn:hover{background-color:white;color:#116ebf;font-weight:400;}
 .login-container{background-color:white;}
-.btn-submit{box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);background-color:rgb(218, 56, 56);color:white;}
+.btn-submit{box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);background-color:rgb(218, 56, 56);color:white; display:inline-block;width: 150px;}
 .btn-submit:hover{border:1px solid rgb(218, 56, 56);background: transparent;color:rgb(218, 56, 56);}
 .fab{width:30px;height:30px;border-radius:50%;background-color:rgb(218, 56, 56);color:white;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);padding:7px;}
 .fab:hover{border:1px solid rgb(218, 56, 56);;background:transparent;color:rgb(218, 56, 56);}
