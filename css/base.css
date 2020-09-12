@@ -4,8 +4,9 @@
     --font-color: #fff;
     --heading-color: grey;
 }
+@font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'CeraPro-Regular';
 }
 .view1{
     background-color: #116ebf;  background-repeat: no-repeat; background-size:cover; background-position: center;
@@ -29,6 +30,9 @@ body{
     background:linear-gradient(rgba(7, 33, 68, 0.9), rgba(8, 39, 75, 0.9)),url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
 .hr-light{background-color:white;}
 .btn-learn{padding:5px;border:1px solid white;color:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.3);}
-.btn-learn:hover{background-color:white;color:#116ebf;font-weight:600;}
+.btn-learn:hover{background-color:white;color:#116ebf;font-weight:400;}
 .login-container{background-color:white;}
-.btn-danger{box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);}
+.btn-submit{box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);background-color:rgb(218, 56, 56);color:white;}
+.btn-submit:hover{border:1px solid rgb(218, 56, 56);background: transparent;color:rgb(218, 56, 56);}
+.fab{width:30px;height:30px;border-radius:50%;background-color:rgb(218, 56, 56);color:white;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);padding:7px;}
+.fab:hover{border:1px solid rgb(218, 56, 56);;background:transparent;color:rgb(218, 56, 56);}
