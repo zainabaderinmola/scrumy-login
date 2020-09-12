@@ -8,6 +8,10 @@
 body{
     font-family: 'CeraPro-Regular';
 }
+@media (max-width:854px){
+    .holder-first{width:100%;}
+    .holder-second{width:100%;}
+}
 .view1{
     background-color: #116ebf;  background-repeat: no-repeat; background-size:cover; background-position: center;
 }
