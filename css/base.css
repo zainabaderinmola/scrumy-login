@@ -27,7 +27,7 @@ body{
     2.3px 4.9px 41.8px 33.4px rgba(0, 0, 0, 0.086),
     2.3px 4.9px 100px 80px rgba(0, 0, 0, 0.12)
   ;
-    background:linear-gradient(rgba(7, 33, 68, 0.9), rgba(8, 39, 75, 0.9)),url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
+    background:linear-gradient(rgba(2, 34, 80, 0.8), rgba(1, 36, 77, 0.8)),url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
 .hr-light{background-color:white;}
 .btn-learn{padding:5px;border:1px solid white;color:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.3);}
 .btn-learn:hover{background-color:white;color:#116ebf;font-weight:400;}
