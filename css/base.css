@@ -5,10 +5,10 @@
     --heading-color: grey;
 }
 @font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
-
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
 body{
-    font-family: 'CeraPro-Regular';
-}
+    font-family: 'Kumbh Sans', sans-serif;
+    background:linear-gradient(rgba(2, 34, 80, 0.8), rgba(1, 36, 77, 0.8)),url('https://images.unsplash.com/photo-1502899576159-f224dc2349fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80');background-repeat: no-repeat; background-size:cover; background-position: center;}
 .view1{
     background-color: #116ebf;  background-repeat: no-repeat; background-size:cover; background-position: center;
 }
@@ -24,3 +24,5 @@ body{
 .btn-submit:hover{border:1px solid rgb(218, 56, 56);background: transparent;color:rgb(218, 56, 56);}
 .fab{width:30px;height:30px;border-radius:50%;background-color:rgb(218, 56, 56);color:white;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);padding:7px;}
 .fab:hover{border:1px solid rgb(218, 56, 56);;background:transparent;color:rgb(218, 56, 56);}
+
+/* login2 */
