@@ -15,29 +15,44 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <link href='../css/base.css' rel="stylesheet">
+    <!-- <link href='../css/base.css' rel="stylesheet"> -->
+    <style>
+        label{margin:0; padding:0;float:left;}
+    </style>
 </head>
+
 <body style="background-color:black;">
     <section class='bg'>
         <div class='container'>
             <div class='row justify-content-center' style='height:100vh;'>
-                <div class='col-lg-4 col-md-12 d-inline-flex' style='width:100%;height:100%;background-color:rgb(8, 9, 53);background-size: cover; padding:0;'>
+                <div class='col-lg-4 col-md-12 d-inline-flex' style='width:100%;height:100%;background-color:rgb(5, 5, 37);background-size: cover; padding:0;'>
                     <div class='inner-one my-auto' style='background-color:rgb(49, 46, 199);width:85%;height:85%;border-radius:20px 0 0 20px;float:right;margin-left: 15%;'>
                     </div>
                 </div>
                 <div class='col-lg-6 col-md-12 d-inline-flex' style='width:100%; height:100%;background:rgb(234, 238, 253);background-size: cover;background-repeat: no-repeat;background-position: center;margin:0;padding:0;'>
                     <div class='inner-two my-auto' style='background-color:rgb(255, 255, 255);width:85%;height:85%;border-radius:0 20px 20px 0;float:left;'>
-                        <div class="card">
+                        <div class="card-head">
                             <!-- Card image -->
-                            <div class="view overlay" style='margin:auto;'>
-                                <img class="card-img-top" src="../images/login.gif" style='width:200px;height:150px;'loading="lazy" alt="aicodings cheapest website developer">
-                                <a href="#!">
-                                    <div class="mask rgba-red-slight"></div>
-                                </a>
+                            <div class="view overlay">
+                                <img class="card-img-top" src="../images/login.gif" style='width:110px;height:80px;margin-top:5px;'loading="lazy" alt="aicodings">
                             </div>
                             <!-- Card content -->
-                            <div class="card-body">
-                                <!-- Title -->
+                            <div class="card-body justify-content-center col-lg-8 mx-auto">
+                                <i class='fab fa-pencil'></i><h6 class='text-align' style='font-weight:700;text-align:center;'>Account Details</h6>
+                                <form class="text-center" action="#!">
+                                    <!-- Email -->
+                                    <label>Full Name</label>
+                                    <input type="text" id="" class="form-control mt-2 mb-2">
+                                    <label>Username</label>
+                                    <input type="text" id="" class="form-control mt-2 mb-2">
+                                    <label>Email</label>
+                                    <input type="email" id="defaultLoginFormEmail" class="form-control mt-2 mb-2" placeholder="">
+                                    <label>Password</label>
+                                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-2" placeholder="">
+                                    <!-- Sign in button -->
+                                    <button class="btn btn-submit btn-block my-3" type="submit" style='padding:5px 10px;background-color:rgb(49, 46, 199);color:white;'>Log In</button>
+                                    <!-- Register -->
+                               </form>
                             </div>
                         </div>
                 </div>
