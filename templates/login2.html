@@ -57,9 +57,16 @@
                             <div class="card-body justify-content-center col-lg-6 col-md-5 mx-auto">
                                 <h6 class='text-align' style='font-weight:700;text-align:center;margin-bottom:20px; font-size:14px;font-weight:bold;'><i class='far fa-edit'></i> Account Details</h6>
                                 <form class="text-center" action="#!">
-                                    <!-- Email -->
-                                    <label style='margin-bottom:4px;'>Full name <strong style='color:red;'>*</strong></label>
-                                    <input type="text" id="" class="form-control mt-2 mb-2">
+                                    <div class="form-row mb-2">
+                                        <div class="col">
+                                            <label style='margin-bottom:4px;'>First name <strong style='color:red;'>*</strong></label>
+                                            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col">
+                                            <label style='margin-bottom:4px;'>Last name <strong style='color:red;'>*</strong></label>
+                                            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
                                     <label style='margin-bottom:4px;'>Username <strong style='color:red;'>*</strong></label>
                                     <input type="text" id="" class="form-control mt-2 mb-2">
                                     <label style='margin-bottom:4px;'>Email <strong style='color:red;'>*</strong></label>
@@ -68,7 +75,7 @@
                                     <input type="password" id="defaultLoginFormPassword" class="form-control mb-2" placeholder="">
                                     <!-- Sign in button -->
                                     <button class="btn btn-submit btn-block my-3" type="submit" style='font-size:10px;padding:5px 10px;background-color:rgb(79, 14, 201);color:white;'>Register</button>
-                                    <p style='font-size:12px;'>By clicking Register, you agree that you have read and accepted <strong style='color:rgb(79, 14, 201);'>brains media</strong> Terms of Use and Privacy Policy</p>
+                                    <p style='font-size:12px;text-align:left;'>By clicking Register, you agree that you have read and accepted <strong style='color:rgb(79, 14, 201);'>brains media</strong> Terms of Use and Privacy Policy</p>
                                </form>
                             </div>
                         </div>
