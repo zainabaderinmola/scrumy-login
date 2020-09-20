@@ -47,13 +47,13 @@
   pointer-events:all;
 }
 
-input {
+.select input {
   opacity:1;
   position:absolute;
   left:-99999px;
 }
 
-input:checked + label {
+.select input:checked + label {
   order: 1;
   z-index:2;
   color:white;
@@ -62,7 +62,7 @@ input:checked + label {
   position:relative;
 }
 
-input:checked + label:after {
+.select input:checked + label:after {
   content:'';
   width: 0; 
 	height: 0; 
@@ -76,7 +76,7 @@ input:checked + label:after {
   z-index:3;
 }
 
-input:checked + label:before {
+.select input:checked + label:before {
   position:absolute;
   right:0;
   height: 40px;
@@ -85,9 +85,7 @@ input:checked + label:before {
   background:rgb(42, 45, 236);
 }
 label{margin:0; padding:0;float:left;font-size:12px;font-weight:600;}
-        input[type=text],input[type=email],input[type=password]{font-size:9px;}
-        .form-control{height:25px;border:1.5px solid rgb(7, 1, 20);}
-        .form-control:focus{border:1px solid rgb(93, 21, 226);}
+input[type=text],input[type=email],input[type=password]{font-size:11px;}
     </style>
 </head>
 
@@ -115,7 +113,7 @@ label{margin:0; padding:0;float:left;font-size:12px;font-weight:600;}
                         </div>
                     </div>
                 </div>
-                <div class='col-lg-6 col-md-12 d-inline second py-2' style='width:100%;min-height:610px;background:rgb(238, 238, 238);background-size: cover;background-repeat: no-repeat;background-position: center;margin:0;'>
+                <div class='col-lg-6 col-md-12 d-inline second p-3' style='width:100%;min-height:610px;background:rgb(238, 238, 238);background-size: cover;background-repeat: no-repeat;background-position: center;margin:0;'>
                     <div class='text-inner' style='width:220px;height:auto; float:right;'><h5 style='color:rgb(10, 10, 10);font-size:13px;text-align:right; font-weight:300; padding: 4px;'>Having troubles? <a href='#'style='opacity:1;color:black;font-weight:900;'>Get Help</a></div>
                     <div class="col-lg-10 text-justify mt-5">
                         <div class="tab-content" id="v-pills-tabContent">
@@ -176,16 +174,12 @@ label{margin:0; padding:0;float:left;font-size:12px;font-weight:600;}
                                 <form class="text-center" action="#!">
                                     <div class="form-row mb-2">
                                         <div class="col-8">
-                                            <label style='margin-bottom:4px;'>Company name</label>
-                                            <input8 type="text" id="" class="form-control mt-2 mb-2">
+                                            <label style='margin:0 0 4px 4px;'>Company name</label>
+                                            <input type="text" id="" class="form-control mt-2 mb-2 p-3">
                                         </div>
                                         <div class="col-4">
-                                            <div class="select" tabindex="1">
-                                                <input class="selectopt" name="test" type="radio" id="opt22" checked>
-                                                <label for="opt22" class="option">Inc</label>
-                                                <input class="selectopt" name="test" type="radio" id="opt23">
-                                                <label for="opt23" class="option">Corp</label>
-                                            </div>
+                                            <label style='margin:0 0 4px 4px;'>Inc</label>
+                                            <input type="text" id="" class="form-control mt-2 mb-2 p-3">
                                         </div>
                                     </div>
                                 </form>
