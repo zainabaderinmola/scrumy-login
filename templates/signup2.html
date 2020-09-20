@@ -24,7 +24,64 @@
         .first{height:100%;}.second{height:100%;}
         @media(max-width:840px){.first{height:auto;width:100%; display:inline-block;}}
         @media(min-width:850px){.first{height:610px;width:100%;display:flex;}}
-        td{background-color:white;text-align:center;border-radius:10px;padding: 10px 27px;}
+        .select {display:flex;flex-direction: column;position:relative;width:250pxheight:40px;}
+.option {padding:0 30px 0 10px;min-height:40px;display:flex;align-items:center;background:#333;border-top:#222 solid 1px;position:absolute;top:0;
+  width: 100%;
+  pointer-events:none;
+  order:2;
+  z-index:1;
+  transition:background .4s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+  
+}
+
+.option:hover {
+  background:#666;
+}
+
+.select:focus .option {
+  position:relative;
+  pointer-events:all;
+}
+
+input {
+  opacity:0;
+  position:absolute;
+  left:-99999px;
+}
+
+input:checked + label {
+  order: 1;
+  z-index:2;
+  background:#666;
+  border-top:none;
+  position:relative;
+}
+
+input:checked + label:after {
+  content:'';
+  width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+  position:absolute;
+  right:10px;
+  top:calc(50% - 2.5px);
+  pointer-events:none;
+  z-index:3;
+}
+
+input:checked + label:before {
+  position:absolute;
+  right:0;
+  height: 40px;
+  width: 40px;
+  content: '';
+  background:#666;
+}
     </style>
 </head>
 
@@ -61,57 +118,49 @@
                             <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                 <div class='text-inner' style='width:100%;height:auto;padding: 2px 10px;margin-top:12%;text-align:left;'><p style='color:rgb(8, 8, 8); opacity:0.7;font-size:20px;font-weight:800;line-height:26px;'>Choose the category</p></div>
                                 <div class='text-inner' style='width:90%;padding: 2px 10px;'><p style='color:rgb(0, 0, 0); font-size:13px;opacity: 0.88;text-align:left;'>Select the category of industry to which your company belongs to.</p></div> 
-                                <div class="table-responsive ">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                            <div class="row features-small">
-                                                <th scope="row"></th>
-                                                <td> 
-                                                    <i class="fas fa-plane fa-2x" style='border:1.5px solid rgb(209, 209, 247);padding:20px;margin:20px 10px;border-radius:12px;'></i>
-                                                    <h6 class="feature-title">Aerospace</h6>
-                                                    <div style="height:25px"></div>
-                                                </td>
-                                                <td>
-                                                        <i class="fas fa-truck-moving fa-2x"></i>
-                                                        <h6 class="feature-title">Transport</h6>
-                                                </td>
-                                                <td>
-                                                    <div class="col-lg-3 col-md-3">
-                                                        <div class="row fadeinUp" data-wow-delay="0.6s" style='text-align:center;'>
-                                                            <div class="col-10"> 
-                                                                <i class="fas fa-plane fa-2x"></i>
-                                                            </div>
-                                                            <div class="col-10">
-                                                                <h6 class="feature-title">Aerospace</h6>
-                                                                <div style="height:25px"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="col-lg-3 col-md-3">
-                                                        <div class="row fadeinUp" data-wow-delay="0.6s" style='text-align:center;'>
-                                                            <div class="col-10"> 
-                                                                <i class="fas fa-plane fa-2x"></i>
-                                                            </div>
-                                                            <div class="col-10">
-                                                                <h6 class="feature-title">Aerospace</h6>
-                                                                <div style="height:25px"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </div>
-                                        </tr>
-                                        <tr>
-                                      </tbody>
-                                    </table>
-                                </div>
+                                <div class="select" tabindex="1">
+                                    <input class="selectopt" name="test" type="radio" id="opt1" checked>
+                                    <label for="opt1" class="option">Aerospace</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt2">
+                                    <label for="opt2" class="option">Transport</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt3">
+                                    <label for="opt3" class="option">Telecomms</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt4">
+                                    <label for="opt4" class="option">Computer</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Agriculture</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Construction</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Education</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Pharmaceutical</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Agriculture</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Food</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Health care</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Hospitality</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Entertainment</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">News media</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Energy</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Manufacturing</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Music</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Mining</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Worldwide web</label>
+                                    <input class="selectopt" name="test" type="radio" id="opt5">
+                                    <label for="opt5" class="option">Electronics</label>
+                                  </div>
+                                  <div class='note' style="background-color:rgb(236, 236, 255);border-radius:3px;border:1px solid rgb(198, 198, 255);padding:5px;color:blue;"><i class='fas fa-clipboard'></i><small style='color:black;opacity:0.7;font-weight:500; margin-left:10px;'> This is relative to your specilization.</small></div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
