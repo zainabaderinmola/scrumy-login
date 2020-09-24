@@ -27,8 +27,8 @@
         .card-body{width:240px;}
         label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;color:black;}
         input[type=text],input[type=textarea],input[type=email],input[type=password]{font-size:13px; color:white;}
-        .text{height:120px;border:1px solid rgb(244, 244, 252);width:100%;border-radius: 10px; background-color:#ffffff;}
-        .text2{height:43px;border:1px solid rgb(248, 248, 255);width:100%;border-radius: 10px; background-color:#ffffff;}
+        .text{height:120px;border:1px solid rgb(244, 244, 252);width:100%;background-color:#ffffff;}
+        .text2{height:43px;border:1px solid rgb(248, 248, 255);width:100%; background-color:#ffffff;}
         .carousel-indicators .active{background-color:white;}
         h2 {font: 10px sans-serif;margin-top: 10px;text-align: center;text-transform: uppercase;}
         h2.background {position: relative;z-index: 1;}
@@ -161,39 +161,29 @@
                 </div>
             </div>
         </section>
-        <section style='margin:10rem 0;background-color: rgb(243, 243, 252);padding:5rem 0;'>
+        <section style='margin:10rem 0;background-color: rgb(240, 240, 240);padding:5rem 0;'>
             <div class='text-center mt-3 mb-5' style='font-weight:900;'><h1>Contact Us</h1>
                 <h5 style='font-weight:600;'>We will love to hear from you</h5>
             </div>
-            <div class='container-fluid col-lg-10 mb-5'>
-                <form class="text-center" action="#!">
-                    <div class="form-row mb-4">
-                        <div class="col mr-3">
-                            <label style='margin-bottom:4px;'>First name</label>
+            <div class='container-fluid col-lg-12 mb-5'>
+                <h5 style='font-size:14px;font-weight:600;'>Kindly fill out the form and we will be in touch with you with a lightening speed.</h5>
+                <div class='row'>
+                    <div class='col-lg-6'>
+                        <form class="text-center" action="#!">
+                            <label style='margin-bottom:4px;'>Full name</label>
                             <input type="text" id="defaultRegisterFormFirstName" class="text2" placeholder="">
-                        </div>
-                        <div class="col">
-                            <label style='margin-bottom:4px;'>Last name</label>
-                            <input type="text" id="defaultRegisterFormLastName" class="text2" placeholder="">
-                        </div>
+                            <label style='margin-bottom:4px;'>Email</label>
+                            <input type="email" id="defaultRegisterFormFirstName" class="text2" placeholder="">
+                            <label style='margin-bottom:4px;'>Message</strong></label>
+                            <input type="textarea" id="defaultRegisterFormLastName" class="text mb-3" placeholder="">
+                            <!-- Sign in button -->
+                            <div class='col-lg-4 col-md-12' style='margin:0 auto;text-align:center;'>
+                                <button class="btn btn-submit btn-block my-4" type="submit" style='font-size:18px;font-weight:800;padding:5px 10px;background-color:#010725;;color:white;'>Send</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-row mb-4">
-                        <div class="col mr-3">
-                            <label style='margin-bottom:4px;'>Email</strong></label>
-                            <input type="text" id="defaultRegisterFormFirstName" class="text2" placeholder="">
-                        </div>
-                        <div class="col">
-                            <label style='margin-bottom:4px;'>Phone Number</strong></label>
-                            <input type="text" id="defaultRegisterFormLastName" class="text2" placeholder="">
-                        </div>
-                    </div>
-                    <label style='margin-bottom:4px;'>Message</strong></label>
-                    <input type="textarea" id="defaultRegisterFormLastName" class="text mb-3" placeholder="">
-                    <!-- Sign in button -->
-                    <div class='col-lg-4 col-md-12' style='margin:0 auto;text-align:center;'>
-                        <button class="btn btn-submit btn-block my-4" type="submit" style='font-size:18px;font-weight:800;padding:5px 10px;background-color:#010725;;color:white;'>Send</button>
-                    </div>
-                </form>
+                    <div class='col-lg-5'></div>
+                </div>
             </div>
         </section>
     </main>
