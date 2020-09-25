@@ -28,7 +28,7 @@
           <div class="loader-section section-right"></div>
         </div>
     </div>
-
+   
     <main>
         <div class='container-fluid' style='margin-bottom: 3rem;'>
             <div class='row justify-content-center mb-5' style='min-height:100%;background-color:rgb(255, 255, 255);'>
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section style='margin:10rem 0 0 0;background-color: rgb(202, 202, 202);padding:2rem 0;'>
+        <section style='margin:10rem 0 0 0;background-color: #002e5b;padding:2rem 0; color:white;'>
             <div class='text-center mt-3 mb-5' style='font-weight:900;font-size:2rem;'><h>Contact Us</h>
             </div>
             <div class='container-fluid col-lg-12 mb-5'>
@@ -130,7 +130,7 @@
                             <input type="textarea" id="defaultRegisterFormLastName" class="text mb-3" placeholder="" style='margin-bottom:16px;'>
                             <!-- Sign in button -->
                             <div class='col-lg-4 col-md-6 m-0 p-0'>
-                                <button class="btn btn-submit btn-block my-4" type="submit" style='width:90%;font-size:18px;font-weight:800;padding:5px 10px;background-color:#002e5b;;;color:white;'>Submit</button>
+                                <button class="btn btn-submit btn-block my-4" type="submit" style='width:90%;font-size:18px;font-weight:800;padding:5px 10px;background-color:white;color:#002e5b;'>Submit</button>
                             </div>
                         </form>
                     </div>
@@ -398,6 +398,9 @@
     setTimeout(function(){
   $('body').addClass('loaded');
 }, 2000);
+$(window).on('load', function(){
+		     $("#loader").fadeOut("slow");
+		   });
     </script>
 </body>
 </html>

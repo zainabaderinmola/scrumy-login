@@ -5,7 +5,7 @@
         .square{right:-20px;}
         @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}}
         .card-body{width:240px;}
-        label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;color:black;}
+        label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;}
         input[type=text],input[type=textarea],input[type=email],input[type=password]{font-size:13px; color:white;}
         .text{height:120px;border:1px solid rgb(244, 244, 252);display:block;width:90%;background-color:#ffffff;}
         .text2{height:43px;border:1px solid rgb(248, 248, 255);display:block;width:90%;background-color:#ffffff;}
@@ -128,6 +128,7 @@
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
 }
+
 
 /*Content*/
 .content {
