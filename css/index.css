@@ -15,7 +15,22 @@
         h2.background:before {border-top: 1px solid black;content: "";margin: 0 auto;position: absolute;top: 50%;left: 0;right: 0;bottom: 0;width: 100%;z-index: -1;}
         h2.background span {background: #fff;padding: 0 5px;}
     .feature-title{font-weight:900;}
-
+    
+      .diamond-shape {
+        background: #002e5b;
+        height: 30px;
+        text-align: center;
+        transform:rotate(45deg);
+          width:30px;
+      }
+      .item-count {
+        color: #333;
+        display: table-cell;
+        height: 30px;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+          width:30px;
+      }
 .loader-wrapper {
   position: fixed;
   top: 0;
