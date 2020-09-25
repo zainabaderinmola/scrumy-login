@@ -17,65 +17,17 @@
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- <link href='../css/base.css' rel="stylesheet"> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
-        body{font-family: 'Kumbh Sans', sans-serif;}
-        .first{height:100%;}.second{height:100%;}
-        .square{right:-20px;}
-        @media(max-width:840px){.first{height:100vh;width:100%;}.square{right:0;}}
-        .card-body{width:240px;}
-        label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;color:black;}
-        input[type=text],input[type=textarea],input[type=email],input[type=password]{font-size:13px; color:white;}
-        .text{height:120px;border:1px solid rgb(244, 244, 252);display:block;width:90%;background-color:#ffffff;border-radius:15px 0 15px 0;}
-        .text2{height:43px;border:1px solid rgb(248, 248, 255);display:block;width:90%;background-color:#ffffff;border-radius:0 0 10px 0;}
-        .carousel-indicators .active{background-color:white;}
-        h2 {font: 10px sans-serif;margin-top: 10px;text-align: center;text-transform: uppercase;}
-        h2.background {position: relative;z-index: 1;}
-        h2.background:before {border-top: 1px solid black;content: "";margin: 0 auto;position: absolute;top: 50%;left: 0;right: 0;bottom: 0;width: 100%;z-index: -1;}
-        h2.background span {background: #fff;padding: 0 5px;}
-/* footer */
-.footer-section{background:#010725;position:relative;bottom:0;}
-.footer-cta{border-bottom:1px solid #ffffff;font-weight:200;}
-.single-cta i{color:#1133f2;font-size:20px;float:left;margin-top:8px}
-.cta-text{padding-left:15px;display:inline-block}
-.cta-text h4{color:rgb(255, 255, 255); font-size:20px;font-weight:600;margin-bottom:2px}
-.cta-text span{color:#ffffff;font-size:14px;font-weight:300;opacity:0.7;}
-.footer-content{position:relative;z-index:2}
-.footer-pattern img{position:absolute;top:0;left:0;height:330px;background-size:cover;background-position:100% 100%}
-.footer-logo{margin-bottom:30px}
-.footer-logo img{max-width:200px}
-.footer-text p{margin-bottom:14px;font-size:14px;color:#f8f6f6;line-height:28px}
-.footer-social-icon span{color:#fff;display:block;font-size:20px;font-weight:700;margin-bottom:2px;}
-.footer-social-icon a{color:#fff;font-size:16px;margin-right:15px}
-.footer-social-icon i{height:40px;width:40px;text-align:center;line-height:38px;border-radius:50%}
-.facebook-bg{background:rgb(22, 1, 214);}
-.twitter-bg{background:rgb(22, 1, 214);}
-.gitlab-bg{background:rgb(22, 1, 214);}
-.whatsapp-bg{background:rgb(22, 1, 214);}
-.github-bg{background:rgb(22, 1, 214);}
-.instagram-bg{background:rgb(22, 1, 214);}
-.tumblr-bg{background:rgb(22, 1, 214);}
-.footer-widget-heading h3{color:white;opacity:0.9;font-size:16px;font-weight:600;margin-bottom:20px;position:relative}
-.footer-widget-heading h3::before{content:"";position:absolute;left:0;bottom:-8px;height:2px;width:50px;background:rgb(255, 255, 255);}
-.footer-widget ul li{display:inline-block;float:left;width:50%;margin-bottom:12px;margin-left:-40px;font-size:14px;}
-.footer-widget ul li a:hover{color:#ff5e14}
-.footer-widget ul li a{color:#fcfafa;text-transform:capitalize}
-.subscribe-form{position:relative;overflow:hidden}
-.subscribe-form input{width:100%;font-size:14px;padding:17px 28px;background:#04070e;border:1px solid rgb(3, 3, 75);color:#fff}
-.subscribe-form .sub{position:absolute;right:0;float:right;background:rgb(22, 1, 214);padding:14px 20px;top:0}
-.subscribe-form .sub i{color:#fff;font-size:22px;transform:rotate(-6deg)}
-.copyright-area{background:#01040a;padding:10px 0}
-.copyright-text p{margin:0;font-size:14px;color:#878787}
-.copyright-text p a{color:#ff5e14}
-.footer-menu li{display:inline-block;margin-left:20px}
-.footer-menu li:hover a{color:#ff5e14}
-.footer-menu li a{font-size:14px;color:#878787}
-
-    </style>
+    <link href='./css/index.css' rel="stylesheet">
 </head>
 
 <body style="background-color:rgb(255, 255, 255);">
+    <div class="content">
+        <div class="loader-wrapper">
+          <div class="loader"></div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+        </div>
+    </div>
 
     <main>
         <div class='container-fluid' style='margin-bottom: 3rem;'>
@@ -143,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section style='background-color:black;padding: 12rem 0;'>
+        <section style='background-color:#002e5b;padding: 12rem 0;'>
             <div class='text-center my-5' style='font-weight:900;color:white;'><h1>What we offer</h1>
                 <h5 class='p-5 text-center' style='font-weight:300;color:white;'>We use visual compositions to solve problems and communicate ideas through typography, imagery, color and form.
                     Since internet usage has more than doubled over the past decade.</h5>
@@ -153,7 +105,7 @@
             <div class='container-fluid mb-5'>
                 <div class='row'>
                     <div class='col-lg-7 col-md-12 mb-5'>
-                        <img src="https://images.unsplash.com/photo-1574852859542-1b41217a7815?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" style='width:100%; border-radius:15px;'>
+                        <img src="./images/login page/brains.jpg" style='width:100%; border-radius:15px;'>
                     </div>
                     <div class='col-lg-5 px-5 col-md-12 align-self-center'>
                         <h1 style='color:black;font-weight:900; text-align:center; font-size:2rem;'>Your organisation needs an online manager that helps to increase productivity.</h1>
@@ -161,7 +113,7 @@
                 </div>
             </div>
         </section>
-        <section style='margin:10rem 0;background-color: rgb(211, 211, 211);padding:2rem 0;'>
+        <section style='margin:10rem 0;background-color: rgb(228, 228, 228);padding:2rem 0;'>
             <div class='text-center mt-3 mb-5' style='font-weight:900;font-size:2rem;'><h>Contact Us</h>
             </div>
             <div class='container-fluid col-lg-12 mb-5'>
@@ -188,10 +140,10 @@
                         <div class='text-first mb-5'>For support or any questions:
                             <p>Email us at <a href='#'>info@aicodings.online</a></p>
                         </div>
-                        <div class='text-second mb-5'><h style='font-weight:900;'>Ikorodu, Lagos</h>
+                        <div class='text-second mb-5'><h style='font-size:19px;font-weight:900;'>Ikorodu, Lagos</h>
                             <p>Beaulah Heritage, 25 Ayangburen Road, Opp Ayangburen, Lagos, Nigeria.</p>
                         </div>
-                        <div class='text-second mb-5'><h style='font-weight:900;'>Ajah, Lagos</h>
+                        <div class='text-second mb-5'><h style='font-size:19px;font-weight:900;'>Ajah, Lagos</h>
                             <p>Free Trade Zone, Dangote Refinery, Ibeju Lekki, Lagos, Nigeria</p>
                         </div>
                     </div>
@@ -199,6 +151,9 @@
             </div>
         </section>
     </main>
+    <section>
+        <div class='try'><span></span><span></span></div>
+    </section>
     <footer class="footer-section" style='margin-top:-10rem;'>
         <div class="container-fluid">
             <div class="footer-cta pt-5 pb-5">
@@ -341,6 +296,11 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!--  core JavaScript -->
+    <!--  core JavaScript -->
+    <script>
+    setTimeout(function(){
+  $('body').addClass('loaded');
+}, 2000);
+    </script>
 </body>
 </html>
