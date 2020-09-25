@@ -27,8 +27,8 @@
         .card-body{width:240px;}
         label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;color:black;}
         input[type=text],input[type=textarea],input[type=email],input[type=password]{font-size:13px; color:white;}
-        .text{height:120px;border:1px solid rgb(244, 244, 252);width:100%;background-color:#ffffff;}
-        .text2{height:43px;border:1px solid rgb(248, 248, 255);width:100%; background-color:#ffffff;}
+        .text{height:120px;border:1px solid rgb(244, 244, 252);display:block;width:90%;background-color:#ffffff;}
+        .text2{height:43px;border:1px solid rgb(248, 248, 255);display:block;width:90%;background-color:#ffffff;}
         .carousel-indicators .active{background-color:white;}
         h2 {font: 10px sans-serif;margin-top: 10px;text-align: center;text-transform: uppercase;}
         h2.background {position: relative;z-index: 1;}
@@ -161,29 +161,39 @@
                 </div>
             </div>
         </section>
-        <section style='margin:10rem 0;background-color: rgb(240, 240, 240);padding:5rem 0;'>
-            <div class='text-center mt-3 mb-5' style='font-weight:900;'><h1>Contact Us</h1>
+        <section style='margin:10rem 0;background-color: rgb(240, 240, 240);padding:2rem 0;'>
+            <div class='text-center mt-3 mb-5' style='font-weight:900;font-size:2rem;'><h>Contact Us</h>
                 <h5 style='font-weight:600;'>We will love to hear from you</h5>
             </div>
             <div class='container-fluid col-lg-12 mb-5'>
-                <h5 style='font-size:14px;font-weight:600;'>Kindly fill out the form and we will be in touch with you with a lightening speed.</h5>
+                <h5 style='font-size:16px;font-weight:600;margin-left:3rem;'>Kindly fill out the form and we will be in touch with you with a bolt speed.</h5>
                 <div class='row'>
-                    <div class='col-lg-7 mr-5'>
-                        <form class="text-center" action="#!">
+                    <div class='col-lg-6 ml-5'>
+                        <form class="text-center" action="#!" style='margin-top:2.3rem;'>
                             <label style='margin-bottom:4px;'>Full name</label>
-                            <input type="text" id="defaultRegisterFormFirstName" class="text2" placeholder="">
-                            <label style='margin-bottom:4px;'>Email</label>
-                            <input type="email" id="defaultRegisterFormFirstName" class="text2" placeholder="">
+                            <input type="text" id="defaultRegisterFormFirstName" class="text2" placeholder="" style='margin-bottom:16px;'>
+                            <label style='margin-bottom:4px;'>Your Email</label>
+                            <input type="email" id="defaultRegisterFormFirstName" class="text2" placeholder="" style='margin-bottom:16px;'>
                             <label style='margin-bottom:4px;'>Message</strong></label>
-                            <input type="textarea" id="defaultRegisterFormLastName" class="text mb-3" placeholder="">
+                            <input type="textarea" id="defaultRegisterFormLastName" class="text mb-3" placeholder="" style='margin-bottom:16px;'>
                             <!-- Sign in button -->
-                            <div class='col-lg-3 col-md-12'>
-                                <button class="btn btn-submit btn-block my-4" type="submit" style='font-size:18px;font-weight:800;padding:5px 10px;background-color:#010725;;color:white;'>Send</button>
+                            <div class='col-lg-4 col-md-6 m-0 p-0'>
+                                <button class="btn btn-submit btn-block my-4" type="submit" style='width:90%;font-size:18px;font-weight:800;padding:5px 10px;background-color:#010725;;color:white;'>Send</button>
                             </div>
                         </form>
                     </div>
+                    <div class='col-lg-2'></div>
                     <div class='col-lg-3 ml-5'>
                         <h3 style='font-size:20px;font-weight:600;'>Connect with us</h3>
+                        <div class='text-first mb-5'>For support or any questions:
+                            <p>Email us at <a href='#'>info@aicodings.online</a></p>
+                        </div>
+                        <div class='text-second mb-5'><h style='font-weight:900;'>Ikorodu, Lagos</h>
+                            <p>Beaulah Heritage, 25 Ayangburen Road, Opp Ayangburen, Lagos, Nigeria.</p>
+                        </div>
+                        <div class='text-second mb-5'><h style='font-weight:900;'>Ajah, Lagos</h>
+                            <p>Free Trade Zone, Dangote Refinery, Ibeju Lekki, Lagos, Nigeria</p>
+                        </div>
                     </div>
                 </div>
             </div>
