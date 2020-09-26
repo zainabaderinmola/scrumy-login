@@ -8,7 +8,7 @@
         .demo a:hover{background-color:white;color:#c43963;border:1px solid #c43963;}
         .first{height:100%;}.second{height:100%;}
         .square{right:-20px;}
-        @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}}
+        @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}.navbar-collapse{height:100vh;margin:auto;display:flex;padding:2rem;}}
         .card-body{width:240px;}
         label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;}
         input[type=text],input[type=textarea],input[type=email],input[type=password]{font-size:13px; color:white;}
