@@ -4,6 +4,8 @@
         .signup a{border:1px solid rgb(131, 85, 0);padding:17px 3px;width:150px;text-align:center;font-size:14px;color:#002e5b;}
         .login{padding:10px 3px;}
         .signup a:hover{color:white;background-color:#002e5b;border:none;}
+        .demo a{padding:17px 3px;background-color:#002e5b;color:white;width:150px;font-size:14px;}
+        .demo a:hover{background-color:white;color:#002e5b;border:1px solid #002e5b;}
         .first{height:100%;}.second{height:100%;}
         .square{right:-20px;}
         @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}}
