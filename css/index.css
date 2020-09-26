@@ -19,7 +19,7 @@
         h2.background {position: relative;z-index: 1;}
         h2.background:before {border-top: 1px solid black;content: "";margin: 0 auto;position: absolute;top: 50%;left: 0;right: 0;bottom: 0;width: 100%;z-index: -1;}
         h2.background span {background: #fff;padding: 0 5px;}
-    .feature-title{font-weight:900;}
+    .feature-title{font-weight:900;color:#c43963;}
     
       .diamond-shape {
         background: #002e5b;
