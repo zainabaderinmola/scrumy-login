@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <!-- <link href='../css/base.css' rel="stylesheet"> -->
+    <link href='../css/index.css' rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
         body{font-family: 'Kumbh Sans', sans-serif;}
@@ -53,7 +53,48 @@
 </head>
 
 <body style="background-color:rgb(10, 1, 36);">
-    
+    <header style='margin-bottom:3rem;'>
+        <nav class="navbar fixed-top navbar-expand-lg  mb-5 scrolling-navbar">
+			<div class="container-fluid">
+				<!-- Brand -->
+				<a class="navbar-brand mr-5" href="../index.html">
+					<div class='text-inner' style='display:inline-block;height:auto;'><h5 style='color:#002e5b;font-size:28px;text-align: left; font-weight:900; '><i class="fas fa-robot"></i>  <strong>Brains</strong><h style='opacity: 0.95;'></style>media</h5></div>
+                </a>
+                
+				<a class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class='fas fa-bars fa-lg'></i></span>
+                </a>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- Left -->
+					<ul class="navbar-nav mx-auto" style='text-transform:uppercase;color:#002e5b;font-weight:800;text-decoration: none;line-height:10px;'>
+						<li class="nav-item item"> <a class="nav-link" href="index.html" style='text-transform:uppercase;color:#002e5b;'>Events
+              				<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#ModalWarning" href="#" style='text-transform:uppercase;color:#002e5b;'>Demo</a>
+						</li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#modalContactForm" href="#" style='text-transform:uppercase;color:#002e5b;'>Services</a>
+						</li>
+						<li class="nav-item"> <a class="nav-link" href="./templates/pricing.html" style='text-transform:uppercase;color:#002e5b;'>Pricing</a>
+						</li>
+					</ul>
+					<!-- Right -->
+					<ul class="navbar-nav nav-flex-icons mx-auto"  style='text-transform:uppercase;font-weight:800;text-decoration: none;line-height:10px;'>
+						<li class="nav-item mr-2 login">
+							<a href="login2.html" class="nav-link" target="_blank" style='text-transform:uppercase;color:#002e5b;' >sign in
+							</a>
+						</li>
+						<li class="nav-item signup">
+							<a href="signup.html" class="nav-link" target="_blank" style='text-transform:uppercase;'>Sign up now
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
     <section class='bg'>
         <div class='container'>
             <div class='row justify-content-center' style='height:100vh;'>
