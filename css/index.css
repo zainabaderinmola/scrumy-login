@@ -8,7 +8,8 @@
         .demo a:hover{background-color:white;color:#c43963;border:1px solid #c43963;}
         .first{height:100%;}.second{height:100%;}
         .square{right:-20px;}
-        @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}.navbar-collapse{height:100vh;margin:0 auto;display:inline-block;padding:2rem;margin-top:4rem;}.nav-item{padding:6px;margin:0 auto;}.carousel-caption{bottom:1%;height:100%;}}
+        carousel-caption{width:80%;height:100%;}
+        @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}.navbar-collapse{height:100vh;margin:0 auto;display:inline-block;padding:2rem;margin-top:4rem;}.nav-item{padding:6px;margin:0 auto;}.carousel-caption{width:80%;height:100%;}}
         .card-body{width:240px;}
         label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;display:block;width:100%;text-align:left;}
         input[type=text],input[type=textarea],input[type=email],input[type=password]{font-size:13px; color:white;}
@@ -20,7 +21,7 @@
         h2.background:before {border-top: 1px solid black;content: "";margin: 0 auto;position: absolute;top: 50%;left: 0;right: 0;bottom: 0;width: 100%;z-index: -1;}
         h2.background span {background: #fff;padding: 0 5px;}
         .feature-title{font-weight:900;color:#c43963;}
-        .square-peg{width:100px;height:30px;background-color:#c43963;position:absolute;}
+        .square-peg{width:80px;height:30px;background-color:#c43963;position:absolute;}
       .diamond-shape {
         background: #002e5b;
         height: 30px;
