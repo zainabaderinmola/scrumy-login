@@ -21,7 +21,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link href='./css/index.css' rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.lite.min.css" rel="stylesheet">
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.min.css" rel="stylesheet">
+        <link href='./css/index.css' rel="stylesheet">
 </head>
 
 <body style="background-color:rgb(255, 255, 255);">
@@ -277,12 +282,12 @@
                 </div>
             </div>
         </section>
-        <section class=' wow fadeInUp mb-5' style='padding:4rem 0;color:#043464;'>
+        <section class='wow fadeInUp mb-5' style='padding:4rem 0;color:#043464;'>
             <div class='container-fluid'>
                 <div class='text-center mt-3 mb-5' style='font-weight:900;font-size:2rem;'><h>What to Expect</h>
                 </div>
             <!--First row-->
-                <div class="row features-small mb-5 mt-5 wow fadeInUp">
+                <div class="row features-small mb-5 mt-5 wow fadeInUp" data-wow-delay="1.3s">
                     <!--Grid column-->
                     <div class="col-lg-4 col-md-4">
                         <!--Grid row-->
@@ -328,7 +333,7 @@
                 </div>
             <!--/First row-->
             <!--Second row-->
-                <div class="row features-small mt-5 wow fadeInUp">
+                <div class="row features-small mt-5 wow fadeInUp"  data-wow-delay="1.7s">
                     <!--Grid column-->
                     <div class="col-lg-4 col-md-4">
                         <!--Grid row-->
@@ -583,8 +588,10 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!--  core JavaScript -->
-    <script>
+	<!--  core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript">
+         new WOW().init();
     setTimeout(function(){
   $('body').addClass('loaded');
 }, 2000);
