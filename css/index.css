@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
         body{font-family: 'Kumbh Sans', sans-serif;}
-        .navbar{background-color:white;box-shadow:0 4px 16px 0 rgba(rgb(196, 196, 196));}
+        .navbar{background-color:white;box-shadow:-2 18px 30px 15 rgba(0,0,0,0.2);}
         .navbar-toggler-icon:hover{color:#c43963;}
         .signup a{border:1px solid #c43963;padding:17px 3px;width:150px;text-align:center;font-size:14px;color:white;background-color:#c43963;box-shadow:-2px 18px 30px 15px rgba(0,0,0,0.2);}
         .login{padding:10px 3px;}
