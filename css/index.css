@@ -8,7 +8,7 @@
         .demo a:hover{background-color:white;color:#c43963;border:1px solid #c43963;}
         .first{height:100%;}.second{height:100%;}
         .square{right:-20px;}
-        carousel-caption{width:80%;height:100%;}
+        carousel-caption{width:80%;max-height:50%;}
         @media(max-width:840px){.first{height:100%;width:100%;}.square{right:0;}.navbar-collapse{height:100vh;margin:0 auto;display:inline-block;padding:2rem;margin-top:4rem;}.nav-item{padding:6px;margin:0 auto;}.carousel-caption{width:80%;height:100%;}}
         .card-body{width:240px;}
         label{margin:0; padding:0;float:left;font-size:15px;font-weight:600;display:block;width:100%;text-align:left;}
