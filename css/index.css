@@ -153,7 +153,7 @@
   /* button text color */
   outline: none;
   background: transparent;
-  border: 2px solid black;
+  border: 2px solid #c43963;
   text-transform: uppercase;
   /* use google font */
   line-height: 2;
@@ -177,7 +177,7 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  background: black;
+  background: #c43963;
   /* onhover background color */
   z-index: -1;
   transform: translate3D(0, -100%, 0);
