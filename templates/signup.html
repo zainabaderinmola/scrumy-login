@@ -21,15 +21,15 @@
         body{font-family: 'Kumbh Sans', sans-serif;}
         .first{height:100%;}.second{height:100%;}
         .inner-one{width:92%;margin-left: 8%;}
-        .card-body{width:240px;}
-        label{margin:0; padding:0;float:left;font-size:8px;font-weight:600;color:rgb(139, 139, 139);}
+        .card-body{width:340px;}
+        label{margin:0; padding:0;float:left;font-size:8px;font-weight:600;}
         input[type=text],input[type=email],input[type=password]{font-size:9px;}
-        .form-control{height:25px;border:1.5px solid rgb(238, 234, 247);}
+        .form-control{height:35px;border:1.5px solid rgb(238, 234, 247);}
         .form-control:focus{border:1px solid rgb(93, 21, 226);}
-        @media(max-width:640px){.card-body{width:240px;}.inner-one{width:80%;margin-left:20%;}}
-        @media(max-width:740px){.card-body{width:240px;}.first{height:70%;}.second{height:75%}.inner-one{width:80%;height:70%;margin-left:20%;}.inner-two{height:70%;}}
-        @media(max-width:840px){.card-body{width:240px;}.inner-one{width:80%;margin-left:20%;}}
-        @media(max-width:1010px){.card-body{width:240px;}.inner-one{width:80%;margin-left:20%;}}
+        @media(max-width:640px){.card-body{width:260px;}.inner-one{width:80%;margin-left:20%;}}
+        @media(max-width:740px){.card-body{width:260px;}.first{height:70%;}.second{height:75%}.inner-one{width:80%;height:70%;margin-left:20%;}.inner-two{height:70%;}}
+        @media(max-width:840px){.card-body{width:260px;}.inner-one{width:80%;margin-left:20%;}}
+        @media(max-width:1010px){.card-body{width:260px;}.inner-one{width:80%;margin-left:20%;}}
         h2 {font: 10px sans-serif;margin-top: 10px;text-align: center;text-transform: uppercase;}
         h2.background {position: relative;z-index: 1;}
         h2.background:before {
@@ -47,7 +47,68 @@
   background: #fff;
   padding: 0 5px;
         }
+        .select {display:flex;flex-direction: column;position:relative;width:100%;height:40px;}
+.option {padding:0 30px 0 10px;min-height:40px;display:flex;align-items:center;background:#333;border-top:#222 solid 1px;position:absolute;top:0;
+  width: 100%;
+  pointer-events:none;
+  order:2;
+  z-index:1;
+  transition:background .4s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+  color:white;
+  
+}
 
+.option:hover {
+  background:rgb(27, 27, 27);
+}
+
+.select:focus .option {
+  position:relative;
+  pointer-events:all;
+}
+
+.select input {
+  opacity:1;
+  position:absolute;
+  left:-99999px;
+}
+
+.select input:checked + label {
+  order: 1;
+  z-index:2;
+  color:black;
+  background:rgb(255, 255, 255);
+  border-top:none;
+  position:relative;
+}
+
+.select input:checked + label:after {
+  content:'';
+  width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+  position:absolute;
+  right:14px;
+  top:calc(50% - 2.5px);
+  pointer-events:none;
+  z-index:3;
+}
+
+.select input:checked + label:before {
+  position:absolute;
+  right:0;
+  height: 40px;
+  width: 40px;
+  content: '';
+  background-color:#c43963;
+}
+label{margin:0; padding:0;float:left;font-size:13px;font-weight:600;}
+input[type=text],input[type=email],input[type=password]{font-size:13px;}
 
     </style>
 </head>
@@ -98,8 +159,8 @@
     <section class='bg'>
         <div class='container'>
             <div class='row justify-content-center' style='height:100vh;'>
-                <div class='col-lg-3 col-md-12 d-inline-flex first' style='width:100%;background-color:rgb(13, 3, 41);background-size: cover; padding:0;'>
-                    <div class='inner-one my-auto justify-content-center' style='background-color:rgb(74, 14, 185);height:460px;border-radius:10px 0 0 10px;'>
+                <div class='col-lg-4 col-md-12 d-inline-flex first' style='width:100%;background-color:rgb(13, 3, 41);background-size: cover; padding:0;'>
+                    <div class='inner-one my-auto justify-content-center' style='background-color:rgb(74, 14, 185);height:500px;border-radius:10px 0 0 10px;'>
                         <div class='text-inner' style='width:170px;height:auto;margin:30% auto 20px auto;'><h5 style='color:white;font-size:13px;text-align: left; font-weight:500;margin-top:40%; padding: 4px;'><i class="fas fa-robot"></i>  <a href='../index.html' style='color:white;text-decoration: none;'>brains media</a></h5></div>
                         <div class='text-inner' style='width:170px;height:auto;margin:auto;'><h4 style='color:white; font-size:20px; text-align:left;font-weight:600;line-height:26px;'>Our services are tested and trusted globally</h4></div>
                         <div class='text-inner' style='width:170px;height:auto;margin:30px auto;'><h4 style='color:white; font-size:10px;opacity: 0.58;'>Brains media is a large enterprise that builds and develops amazing web and mobile application.</h4></div>
@@ -109,7 +170,7 @@
                         <div class='square' style='border:20px solid rgb(13, 3, 41);position: relative; width:70px;height:60px;margin-left:-9%;top:15px;border-radius:20px;'></div>
                     </div>
                 </div>
-                <div class='col-lg-6 col-md-12 d-inline-flex second' style='width:100%;background:rgb(234, 238, 253);background-size: cover;background-repeat: no-repeat;background-position: center;margin:0;padding:0;'>
+                <div class='col-lg-8 col-md-12 d-inline-flex second' style='width:100%;background:rgb(234, 238, 253);background-size: cover;background-repeat: no-repeat;background-position: center;margin:0;padding:0;'>
                     <div class='inner-two my-auto' style='background-color:rgb(255, 255, 255);width:95%;height:500px;border-radius:0 10px 10px 0;float:left;'>
                         <div class="card-head">
                             <!-- Card image -->
@@ -122,23 +183,61 @@
                                 <button class="btn btn-submit btn-block my-2" type="submit" style='font-size:10px;padding:5px 10px;color:grey;border:2px solid rgb(233, 233, 233);background-color:rgb(238, 234, 247);font-weight: 700;font-size:10px;'><img src='https://i.pinimg.com/originals/39/21/6d/39216d73519bca962bd4a01f3e8f4a4b.png' style='width:15px;height:15px; margin-right:10px;'>Sign up with Google</button>
                                 <h2 class="background"><span style='color:grey;font-weight:600;font-size:10px;'>OR</span></h2>
                                 <form class="text-center" action="#!">
+                                    <label style='margin-bottom:4px;'>Company name <strong style='color:#c43963;'>*</strong></label>
+                                    <input type="text" id="" class="form-control my-2">
                                     <div class="form-row mb-2">
                                         <div class="col">
                                             <label style='margin-bottom:4px;'>First name <strong style='color:#c43963;'>*</strong></label>
                                             <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="">
                                         </div>
                                         <div class="col">
-                                            <label style='margin-bottom:4px;'>Last name <strong style='color:r#c43963;'>*</strong></label>
+                                            <label style='margin-bottom:4px;'>Last name <strong style='color:#c43963;'>*</strong></label>
                                             <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="">
                                         </div>
                                     </div>
                                     <label style='margin-bottom:4px;'>Username <strong style='color:#c43963;'>*</strong></label>
                                     <input type="text" id="" class="form-control mt-2 mb-2">
-                                    <label style='margin-bottom:4px;'>Email <strong style='color:#c43963;'>*</strong></label>
-                                    <input type="email" id="defaultLoginFormEmail" class="form-control mt-2 mb-2" placeholder="">
-                                    <label style='margin-bottom:4px;'>Password <strong style='color:#c43963;'>*</strong></label>
-                                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-2" placeholder="">
-                                    <!-- Sign in button -->
+                                    <div class="select" tabindex="1">
+                                        <input class="selectopt" name="test" type="radio" id="opt" checked>
+                                        <label for="opt" class="option">Select your choice</label>
+                                        <input class="selectopt" name="test" type="radio" id="opt1">
+                                        <label for="opt1" class="option">Aerospace <i class='fas fa-plane fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt2">
+                                        <label for="opt2" class="option">Transport <i class='fas fa-truck-moving fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt3">
+                                        <label for="opt3" class="option">Telecomms <i class='fas fa-satellite-dish fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt4">
+                                        <label for="opt4" class="option">Computer <i class='fas fa-laptop fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt6">
+                                        <label for="opt6" class="option">Agriculture  <i class='fas fa-tractor fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt7">
+                                        <label for="opt7" class="option">Construction <i class='fas fa-hard-hat fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt8">
+                                        <label for="opt8" class="option">Education <i class='fas fa-user-graduate fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt9">
+                                        <label for="opt9" class="option">Pharmaceutical <i class='fas fa-file-prescription fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt11">
+                                        <label for="opt11" class="option">Food <i class='fas fa-utensils fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt12">
+                                        <label for="opt12" class="option">Health care <i class='fas fa-hospital-symbol fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt13">
+                                        <label for="opt13" class="option">Hospitality <i class='fas fa-hotel fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt14">
+                                        <label for="opt14" class="option">Entertainment <i class='fas fa-microphone-alt fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt15">
+                                        <label for="opt15" class="option">News media <i class='fas fa-newspaper fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt16">
+                                        <label for="opt16" class="option">Energy <i class='fas fa-broadcast-tower fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt17">
+                                        <label for="opt17" class="option">Manufacturing <i class='fas fa-industry fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt19">
+                                        <label for="opt19" class="option">Mining <i class='fas fa-coins fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt20">
+                                        <label for="opt20" class="option">Worldwide web <i class='fas fa-blog fa-2x' style='right:50px;position:absolute;'></i></label>
+                                        <input class="selectopt" name="test" type="radio" id="opt21">
+                                        <label for="opt21" class="option">Electronics <i class='fas fa-tv fa-2x' style='right:50px;position:absolute;'></i></label>
+                                    </div>
+                                    
                                     <button class="btn btn-submit btn-block my-1" type="submit" style='font-size:10px;padding:5px 10px;background-color:#c43963;color:white;'>Register</button>
                                     <p style='font-size:9px;text-align:left;'>By clicking Register, you agree that you have read and accepted <strong style='color:#c43963;'>brains media</strong> Terms of Use and Privacy Policy</p>
                                </form>
