@@ -47,7 +47,8 @@
   background: #fff;
   padding: 0 5px;
         }
-        .select {display:flex;flex-direction: column;position:relative;width:100%;height:40px;}
+
+        .select {display:flex;flex-direction: column;position:relative;width:100%;height:35px;border:1.5px solid rgb(238, 234, 247);margin-bottom:20px;}
 .option {padding:0 30px 0 10px;min-height:40px;display:flex;align-items:center;background:#333;border-top:#222 solid 1px;position:absolute;top:0;
   width: 100%;
   pointer-events:none;
@@ -160,7 +161,7 @@ input[type=text],input[type=email],input[type=password]{font-size:13px;}
         <div class='container'>
             <div class='row justify-content-center' style='height:100vh;'>
                 <div class='col-lg-4 col-md-12 d-inline-flex first' style='width:100%;background-color:rgb(13, 3, 41);background-size: cover; padding:0;'>
-                    <div class='inner-one my-auto justify-content-center' style='background-color:rgb(74, 14, 185);height:500px;border-radius:10px 0 0 10px;'>
+                    <div class='inner-one my-auto justify-content-center' style='background-color:rgb(74, 14, 185);height:540px;border-radius:10px 0 0 10px;'>
                         <div class='text-inner' style='width:170px;height:auto;margin:30% auto 20px auto;'><h5 style='color:white;font-size:13px;text-align: left; font-weight:500;margin-top:40%; padding: 4px;'><i class="fas fa-robot"></i>  <a href='../index.html' style='color:white;text-decoration: none;'>brains media</a></h5></div>
                         <div class='text-inner' style='width:170px;height:auto;margin:auto;'><h4 style='color:white; font-size:20px; text-align:left;font-weight:600;line-height:26px;'>Our services are tested and trusted globally</h4></div>
                         <div class='text-inner' style='width:170px;height:auto;margin:30px auto;'><h4 style='color:white; font-size:10px;opacity: 0.58;'>Brains media is a large enterprise that builds and develops amazing web and mobile application.</h4></div>
@@ -171,7 +172,7 @@ input[type=text],input[type=email],input[type=password]{font-size:13px;}
                     </div>
                 </div>
                 <div class='col-lg-8 col-md-12 d-inline-flex second' style='width:100%;background:rgb(234, 238, 253);background-size: cover;background-repeat: no-repeat;background-position: center;margin:0;padding:0;'>
-                    <div class='inner-two my-auto' style='background-color:rgb(255, 255, 255);width:95%;height:500px;border-radius:0 10px 10px 0;float:left;'>
+                    <div class='inner-two my-auto' style='background-color:rgb(255, 255, 255);width:95%;height:540px;border-radius:0 10px 10px 0;float:left;'>
                         <div class="card-head">
                             <!-- Card image -->
                             <div class="view overlay" style='top:0;left:0;text-align:center;'>
@@ -195,11 +196,10 @@ input[type=text],input[type=email],input[type=password]{font-size:13px;}
                                             <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="">
                                         </div>
                                     </div>
-                                    <label style='margin-bottom:4px;'>Username <strong style='color:#c43963;'>*</strong></label>
-                                    <input type="text" id="" class="form-control mt-2 mb-2">
+                                    <label style='margin-bottom:4px;'>Industry <strong style='color:#c43963;'>*</strong></label>
                                     <div class="select" tabindex="1">
                                         <input class="selectopt" name="test" type="radio" id="opt" checked>
-                                        <label for="opt" class="option">Select your choice</label>
+                                        <label for="opt" class="option" style='color:rgb(168, 168, 168);'>Choose</label>
                                         <input class="selectopt" name="test" type="radio" id="opt1">
                                         <label for="opt1" class="option">Aerospace <i class='fas fa-plane fa-2x' style='right:50px;position:absolute;'></i></label>
                                         <input class="selectopt" name="test" type="radio" id="opt2">
