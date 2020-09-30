@@ -231,7 +231,7 @@
 }
 
 /* footer */
-.footer-section{background:linear-gradient(rgba(34, 32, 32, 0.6), rgba(10, 9, 9, 0.6)),url('https://i.pinimg.com/originals/43/3a/81/433a815b8313453ee2edae5f7c91de73.jpg');position:relative;bottom:0;background-position:center;background-repeat: no-repeat;background-size:cover;}
+.footer-section{background:linear-gradient(rgba(34, 32, 32, 0.8), rgba(10, 9, 9, 0.8)),url('https://i.pinimg.com/originals/de/1d/df/de1ddf9ee30e08e15460626b919ef87e.jpg');position:relative;bottom:0;background-position:center;background-repeat: no-repeat;background-size:cover;}
 .footer-cta{border-bottom:1px solid #ffffff;font-weight:200;}
 .single-cta i{color:#1133f2;font-size:20px;float:left;margin-top:8px}
 .cta-text{padding-left:15px;display:inline-block}
