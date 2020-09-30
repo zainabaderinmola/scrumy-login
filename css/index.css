@@ -23,6 +23,7 @@
         .feature-title{font-weight:900;color:#c43963;}
         .square-peg{width:100px;height:40px;background-color:#c43963;position:absolute;}
         .nav-link:hover{border-bottom:2px solid #c43963;}
+       
 .loader-wrapper {
   position: fixed;
   top: 0;
