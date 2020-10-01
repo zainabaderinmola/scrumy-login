@@ -21,7 +21,7 @@
         h2.background:before {border-top: 1px solid black;content: "";margin: 0 auto;position: absolute;top: 50%;left: 0;right: 0;bottom: 0;width: 100%;z-index: -1;}
         h2.background span {background: #fff;padding: 0 5px;}
         .feature-title{font-weight:900;color:#c43963;}
-        .square-peg{width:100px;height:40px;background-color:#c43963;position:absolute;}
+        .square-peg{width:100px;height:30px;background-color:#c43963;position:absolute;}
         .nav-link:hover{border-bottom:2px solid #c43963;}
        
 .loader-wrapper {
@@ -152,8 +152,7 @@
   /* button text color */
   outline: none;
   background: transparent;
-  border: 2px solid #c43963;
-  
+  border: 2px solid black;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -174,7 +173,7 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  background: #c43963;
+  background: black;
   /* onhover background color */
   z-index: -1;
   transform: translate3D(0, -100%, 0);
